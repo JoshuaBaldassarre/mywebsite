@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--What will show on your browser's tab-->
+		<title>mywebsite.</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<!--Links html file to CSS stylesheet file-->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--This makes your website scale automatically according to the device's screen size and shape-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+	<!--Contains all of your website's content-->
+		<div id="container">
+		<!--Contains the top part of your website-->
+			<div id="header">
+				<img src="img/mywebsitelogopre.png" class="center"/>
+			</div>
+		<!--Contains the main content of your website-->
+			<div id="content">
+			<!--Contains the navigation for your website-->
+				<div class="topnav">
+					<ul>
+						<li><a href="index.html"><i class="material-icons">info_outline</i><p>About</p></a></li>
+						<li><a href="index2.html"><i class="material-icons">help_outline</i><p>Help</p></a></li>
+						<li><a class="active" href=""><i class="material-icons">mail_outline</i><p>Contact Me</p></a></li> <!--selected page-->
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+					</ul>
+				</div>
+			<!--Contains the actual content of your website-->
+				<div id="main">
+					<i class="material-icons">mail</i>
+					<h2>Contact Me</h2>
+					<P>Yet to be implemented.</P>
+				</div>
+			</div>
+		<!--Contains you bottom of your website-->
+			<div id="footer">
+				Copyright &copy; 2018 Joshua Baldassarre. Version 0.1.0
+			</div>
+		</div>
+	</body>
+</html>

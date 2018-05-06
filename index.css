@@ -1,0 +1,160 @@
+body {
+	background-color: #CFD8DC; /*default website background color*/
+	font-family: 'roboto condensed', sans-serif; /*website font*/
+	color: #263238; /*default website text color*/
+}
+
+a {
+	text-decoration: none;
+	color: #263238; /*generally set link text color*/
+}
+
+#header {
+	width: 48%; /*width of header*/
+	height: auto; /*height of header*/
+	margin: 0 auto; /*header margins*/
+	box-shadow: 0px 0px 6px #CFD8DC; /*pre-set shadow values for shadow animation*/
+	padding: 12px; /*general padding*/
+	padding-left: 12px; /*further padding*/
+	padding-right: 12px; /*further padding*/
+	border-radius: 0px 0px 0px 0px; /*rounded corner radius*/
+	transition: 0.333s; /*animation timing*/
+	margin-top: -9px; /*pre-set animation values for animated margins*/
+	margin-bottom: -9px; /*pre-set animation values for animated margins*/
+
+}
+
+#header:hover {
+	background-color: #ECEFF1; /*background color of header when fadin in*/
+	box-shadow: 0px 0px 12px #1DE9B6;
+	border-radius: 96px; /*rounded corner radius*/
+	margin-top: 0px;  /*post-animation values*/
+	margin-bottom: 0px; /*post-animation values*/
+}
+
+
+#header img {
+	width:100%;
+	display:block;
+	margin:auto;
+	width: 66%;
+	height: auto;
+}
+
+#content {
+	background-color: #ECEFF1;
+	box-shadow: 0px 0px 0px #1DE9B6;
+	padding: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-top: 12px;
+	transition: 0.333s;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#content:hover {
+	box-shadow: 0px 0px 12px #1DE9B6;
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	overflow: hidden;
+	float: center;
+	border-radius: 12px;
+	list-style-type: none;
+	padding-top: 9px !important;
+	text-align: center;
+	padding-right: 42px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav li {
+	float: center;
+	display: inline-block;
+	color: #263238;
+	text-align: center;
+	padding: 12px 14px;
+	padding-bottom: 0px !important;
+	text-decoration: none;
+	font-size: 17px;
+	transition: .333s;
+	border-radius: 36px;
+	width: 120px;
+}
+
+/* Change the color of links on hover */
+.topnav li:hover {
+	background-color: #1DE9B6;
+	background-size: 60px 60px;
+	color: #263238;
+	padding: 12px 24px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px #CFD8DC;
+}
+
+/* Add an active class to highlight the current page */
+.active li{
+	background-color: #CFD8DC !important;
+	color: #1DE9B6;
+	border-radius: 6px;
+}
+
+.active li:hover {
+	border-radius: 6px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+
+#main{
+	padding: 12px;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#main img {
+	width: 12.5%;
+	margin-left: auto;
+}
+
+#main a {
+	color: #00BFA5;
+}
+
+#main .picinfo {
+	font-size: 13px;
+	color: #607D8B;
+	font-style: italic;
+}
+
+#main .tag {
+	font-size: 11px;
+	color: #B0BEC5;
+	font-style: italic;
+}
+
+#footer{
+	padding: 24px;
+	text-align: center;
+	clear: both;
+	color: #263238;
+}
+
+
+
+
+
+
+
+
+
+
+

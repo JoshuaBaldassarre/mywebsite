@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--What will show on your browser's tab-->
+		<title>mywebsite.</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<!--Links html file to CSS stylesheet file-->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--This makes your website scale automatically according to the device's screen size and shape-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+	<!--Contains all of your website's content-->
+		<div id="container">
+		<!--Contains the top part of your website-->
+			<div id="header">
+				<img src="img/mywebsitelogopre.png" class="center"/>
+			</div>
+		<!--Contains the main content of your website-->
+			<div id="content">
+			<!--Contains the navigation for your website-->
+				<div class="topnav">
+					<ul>
+						<li><a class="active" href=""><i class="material-icons">info_outline</i><p>About</p></a></li> <!--selected page-->
+						<li><a href="index2.html"><i class="material-icons">help_outline</i><p>Help</p></a></li>
+						<li><a href="index3.html"><i class="material-icons">mail_outline</i><p>Contact Me</p></a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+					</ul>
+				</div>
+			<!--Contains the actual content of your website-->
+				<div id="main">
+					<i class="material-icons">info</i>
+					<h2>About</h2>
+					<P>The aim of mywebsite is to give anyone a good looking basic website template for free, general, usage.<br>
+					Mywebsite is open source and free for anyone to use as long as the mywebsite. brand or original creator/s are 
+					credited correctly and clearly.<br><br>I created this website template because I could never find a template
+					that was simple for beginners and didn't involve tones of third party libraries that make the website more 
+					complicated than it needs to be. So I decided to set out and learn basic CSS and HTML to create a good looking
+					and fully functional website template, with the simplest possible code for beginners trying to make their own website.*
+					<br><br>This website was made completely voluntarily in my free time, donating 
+					<a href="https://paypal.me/JoshuaBaldassarre">here</a> to support
+					 and motivate further development for this project would be greatly appreciated.<br><br>
+					<img src="img/favicon.png" class="center"/>
+					<p class="picinfo">mywebsite. brand logo</p>
+					<p class="tag">*mywebsite is still in it's pre-release state, and the HTML and CSS behind it are not yet complete
+					in terms of funcionality, general structure and organisation.</p>
+				</div>
+			</div>
+		<!--Contains you bottom of your website-->
+			<div id="footer">
+				Copyright &copy; 2018 Joshua Baldassarre. Version 0.1.0
+			</div>
+		</div>
+	</body>
+</html>
