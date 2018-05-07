@@ -25,8 +25,8 @@ a {
 }
 
 #header:hover {
-	background-color: #ECEFF1; /*background color of header when fadin in*/
-	box-shadow: 0px 0px 12px #1DE9B6;
+	background-color: #FFF; /*background color of header when fadin in*/
+	box-shadow: 0px 0px 12px #ECEFF1;
 	border-radius: 96px; /*rounded corner radius*/
 	margin-top: 0px;  /*post-animation values*/
 	margin-bottom: 0px; /*post-animation values*/
@@ -75,36 +75,46 @@ a {
 .topnav li {
 	float: center;
 	display: inline-block;
-	color: #263238;
 	text-align: center;
+	text-decoration: none;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	display: block;
+	color: #263238;
 	padding: 12px 14px;
-	padding-bottom: 0px !important;
+	padding-top: 24px;
 	text-decoration: none;
 	font-size: 17px;
 	transition: .333s;
-	border-radius: 36px;
-	width: 120px;
+	border-radius: 40px;
+	width: 92px;
+	height: 80px;
 }
 
 /* Change the color of links on hover */
-.topnav li:hover {
+.topnav a:hover {
 	background-color: #1DE9B6;
 	background-size: 60px 60px;
 	color: #263238;
 	padding: 12px 24px;
+	padding-top: 24px;
 	border-radius: 6px;
-	box-shadow: 0px 0px 12px #CFD8DC;
+	box-shadow: 0px 0px 12px #64FFDA;
 }
 
-/* Add an active class to highlight the current page */
+
+/* change properties to put emphasis on selected page in navigation bar */
 .active li{
 	background-color: #CFD8DC !important;
 	color: #1DE9B6;
 	border-radius: 6px;
 }
 
-.active li:hover {
-	border-radius: 6px;
+.active a:hover {
+	border-radius: 12px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
