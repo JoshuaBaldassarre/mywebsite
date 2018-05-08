@@ -26,7 +26,7 @@ a {
 
 #header:hover {
 	background-color: #FFF; /*background color of header when fadin in*/
-	box-shadow: 0px 0px 12px #CFD8DC;
+	box-shadow: 0px 0px 12px #FFF;
 	border-radius: 96px; /*rounded corner radius*/
 	margin-top: 0px;  /*post-animation values*/
 	margin-bottom: 0px; /*post-animation values*/
@@ -54,7 +54,7 @@ a {
 }
 
 #content:hover {
-	box-shadow: 0px 0px 12px #1DE9B6;
+	box-shadow: 0px 0px 24px #1DE9B6;
 }
 
 
