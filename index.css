@@ -1,7 +1,7 @@
 body {
-	background-color: #ECEFF1; /*default website background color*/
-	font-family: 'roboto condensed', sans-serif; /*website font*/
-	color: #263238; /*default website text color*/
+	background-color: #F5F5F5; /*default website background color*/
+	font-family: 'product sans', sans-serif; /*website font*/
+	color: #000; /*default website text color*/
 }
 
 a {
@@ -10,24 +10,24 @@ a {
 }
 
 #header {
-	width: 48%; /*width of header*/
-	height: auto; /*height of header*/
+	width: 192px; /*width of header*/
+	height: 192px; /*height of header*/
 	margin: 0 auto; /*header margins*/
-	box-shadow: 0px 0px 0px #ECEFF1; /*pre-set shadow values for shadow animation*/
-	padding: 12px; /*general padding*/
-	padding-left: 12px; /*further padding*/
-	padding-right: 12px; /*further padding*/
-	border-radius: 0px 0px 0px 0px; /*rounded corner radius*/
-	transition: 0.333s; /*animation timing*/
+	padding: 24px; /*general padding*/
+	transition: 0.25s; /*animation timing*/
 	margin-top: -9px; /*pre-set animation values for animated margins*/
 	margin-bottom: -9px; /*pre-set animation values for animated margins*/
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 0px;
+	border-color: #E0E0E0;
 
 }
 
 #header:hover {
 	background-color: #FFF; /*background color of header when fadin in*/
-	box-shadow: 0px 3px 12px rgba(255, 255, 255, 0.4);
-	border-radius: 96px; /*rounded corner radius*/
+	border-radius: 48px; /*rounded corner radius*/
+	border-width: 1px;
 	margin-top: 0px;  /*post-animation values*/
 	margin-bottom: 0px; /*post-animation values*/
 }
@@ -37,24 +37,30 @@ a {
 	width:100%;
 	display:block;
 	margin:auto;
-	width: 66%;
 	height: auto;
 }
 
 #content {
-	background-color: #ECEFF1;
-	box-shadow: 0px 0px 0px #1DE9B6;
+	background-color: #FFF;
+	box-shadow: 0px 0px 0px #EEE;
 	padding: 12px;
 	padding-left: 12px;
 	padding-right: 12px;
 	margin-top: 12px;
-	transition: 0.333s;
-	margin-left:-8px;
-	margin-right:-8px;
+	transition: 0.25s;
+	border-radius: 12px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E0E0E0;
+	margin-left: 24px;
+	margin-right: 24px;
 }
 
 #content:hover {
-	box-shadow: 0px 0px 24px #1DE9B6;
+	border-radius: 24px;
+	box-shadow: 0px 4px 16px #E0E0E0;
+	border-width: 0px;
+	padding: 13px;
 }
 
 
@@ -66,7 +72,7 @@ a {
 	float: center;
 	border-radius: 12px;
 	list-style-type: none;
-	padding-top: 9px !important;
+	padding-top: 8px !important;
 	text-align: center;
 	padding-right: 42px;
 }
@@ -84,33 +90,37 @@ a {
 .topnav a {
 	display: block;
 	color: #263238;
-	padding: 12px 14px;
+	padding: 12px 16px;
 	padding-top: 24px;
 	text-decoration: none;
-	font-size: 17px;
-	transition: .333s;
-	border-radius: 40px;
-	width: 92px;
+	font-size: 14px;
+	transition: 0.25s;
+	border-radius: 12px;
+	width: 80px;
 	height: 80px;
+	border-style: solid;
+	border-color: #E0E0E0;
+	border-width: 1px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	background-color: #1DE9B6;
+	background-color: #e91d50;
 	background-size: 60px 60px;
-	color: #263238;
-	padding: 12px 24px;
-	padding-top: 24px;
-	border-radius: 6px;
-	box-shadow: 0px 3px 12px #64FFDA;
+	color: #FFF;
+	padding: 13px 24px;
+	padding-top: 25px;
+	border-radius: 24px;
+	box-shadow: 0px 2px 8px #BDBDBD;
+	border-width: 0px;
 }
 
 
 /* change properties to put emphasis on selected page in navigation bar */
 .active li{
 	background-color: #CFD8DC !important;
-	color: #1DE9B6;
-	border-radius: 6px;
+	color: #FFF;
+	border-radius: 12px;
 }
 
 .active a:hover {
@@ -136,7 +146,41 @@ a {
 }
 
 #main a {
-	color: #00BFA5;
+	color: #c4124b;
+}
+
+#main p {
+	padding: 12px;
+}
+
+#downloads li{
+	text-decoration: none;
+	list-style-type: none;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.button {
+	margin: 0 auto;
+	width: 360px;
+	background-color: #FFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E0E0E0;
+	border-radius: 12px;
+	transition: 0.25s;
+	box-shadow: 0px 0px 0px #EOEOEO;
+	padding: 12px 36px;
+}
+
+
+.button:hover {
+	background-color: #e91d50;
+	padding: 13px 37px;
+	border-width: 0px;
+	border-radius: 24px;
+	box-shadow: 0px 4px 16px #BDBDBD;
+	color: white !important;
 }
 
 #main .picinfo {
@@ -157,9 +201,6 @@ a {
 	clear: both;
 	color: #263238;
 }
-
-
-
 
 
 
