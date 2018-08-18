@@ -75,6 +75,8 @@ button:focus {
 }
 
 .actionbutton {
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
 	position: fixed;
 	outline: none !important;
 	border: none;
@@ -92,11 +94,15 @@ button:focus {
 }
 
 .actionbutton:hover {
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
 	outline: none !important;
 	filter: brightness(90%);
 }
 
 .actionbutton:active {
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
 	outline: none !important;
 	box-shadow: var(--actionshadow-raised);
 	filter: brightness(100%);
