@@ -1,191 +1,109 @@
 body {
-	background-color: #FFF; /*default website background color*/
-	font-family: 'Open Sans Bold', sans-serif; /*website font*/
-	color: #000; /*default website text color*/
+	background: var(--bgcolor);
+	font-family: var(--font);
+	color: var(--text);
 }
 
-a {
-	text-decoration: none;
-	color: #263238; /*generally set link text color*/
+.art {
+	width: 90%;
+	border-radius: 12px;
+	box-shadow: var(--actionshadow);
 }
 
-#content {
-	background-color: #FFF;
-	box-shadow: 0px 0px 0px #EEE;
-	padding: 12px;
-	padding-left: 12px;
-	padding-right: 12px;
-	margin-top: 12px;
-	margin-left: 24px;
-	margin-right: 24px;
-	transition: 0.25s;
+.art:hover {
+	box-shadow: var(actionshadow-raised);
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-	top:0;
-	left: 0;
-	width: 101.5%;
+.art:active {
+	box-shadow: var(actionshadow-raised);
+}
+
+#yellow {
+	color: var(--ppcolor) !important;
+}
+
+#notplaying {
+	padding: 4px;
+	margin-top: 10%;
+	outline: none;
+	border: none;
+	background: var(--none);
+	color: var(--text) !important;
+	z-index: 5;
+	width: 100%;
+	height: 256px;
+	border-radius: 8px;
+	cursor: default;
+}
+
+#playing {
+	padding: 4px;
+	margin-top: 0px;
+	outline: none;
+	border: none;
+	background: var(--none);
+	color: var(--text) !important;
+	z-index: 5;
+	width: 100%;
+	height: 512px;
+	border-radius: 8px;
+	cursor: default;
+	margin-bottom: 5%;
+}
+
+.pagetitle {
 	position: fixed;
-	overflow: hidden;
-	float: center;
-	list-style-type: none;
 	text-align: center;
-	font-weight: bold;
-	z-index: 11;
-	background-color: #fdfdfd;
-	margin-left: -24px;
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
-	border-color:#E0E0E0;
+	bottom: 0;
+	left: 5%;
+	font-size: 150%;
 }
 
-/* Style the links inside the navigation bar */
-.topnav li {
-	float: center;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
+.navigationbar {
+	background: var(--primary);
+	position: fixed ;
+	z-index: 4;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 64px;
+	box-shadow: 0px 0px 6px rgba(79, 32, 32, 0.2);
 }
 
-
-.topnav h1 {
-	z-index: 12;
-	right: 0 !important;
-	color: #e91d50;
-	margin-right: 24px;
-	padding-top: -12px;
+.actionbutton {
+	position: fixed;
+	outline: none;
+	border: none;
+	background: var(--secondary);
+	color: var(--ppcolor) !important;
+	z-index: 5;
+	width: 64px;
+	height: 64px;
+	right: 32px;
+	bottom: 32px;
+	border-radius: 32px;
+	box-shadow: var(--actionshadow);
+	cursor: pointer;
+	transition: 0.1s;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-	display: block;
-	color: #263238;
-	padding-top: 24px;
-	padding-bottom: 6px;
-	text-decoration: none;
-	font-size: 14px;
-	transition: 0.25s;
-	border-radius: 12px;
-	width: 110px;
-	height: 80px;
-	border-style: solid;
-	border-color: #E0E0E0;
-	border-width: 1px;
-	margin: 0px 6px 0px 6px;
+.actionbutton:hover {
+	filter: brightness(90%);
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-	background-color: #fff;
-	background-size: 60px 60px;
-	color: #e91d50;
-	font-weight: bold;
-	border-radius: 55px;
-	border-color: #e91d50;
-	border-width: 1px;
-}
-
-
-
-/* change properties to put emphasis on selected page in navigation bar */
-#active {
-	border-radius: 55px;
-	font-style: italic;
-	background-color: #FFF;
-}
-
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-	display: none;
-}
-
-
-#main{
-	margin-top: 175px;
-	padding: 12px;
-	text-align: center;
-	padding-left: 11.5%;
-	padding-right: 10%;
-}
-
-#main img {
-	width: 12.5%;
-	margin-left: auto;
-}
-
-#main a {
-	color: #c4124b;
-}
-
-#main p {
-	padding: 12px;
-}
-
-#downloads li{
-
-	text-decoration: none;
-	list-style-type: none;
-	padding-top: 0px !important;
-	padding-bottom: 24px !important;
-	display: inline-flex;
-	padding: 12px !important;
-}
-
-#downloads i {
-	margin: 0px 12px 0px -18px;
-	position: relative;
-	top: 4px;
-}
-
-#downloads a{
-
-}
-
-.button {
-	margin: 0 auto;
-	width: 360px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #E0E0E0;
-	border-radius: 12px;
-	transition: 0.25s;
-	padding: 18px 36px;
-	color: #263238 !important;
-}
-
-
-.button:hover {
+.actionbutton:active {
+	box-shadow: var(--actionshadow-raised);
+	width: 72px;
+	height: 72px;
+	bottom: 28px;
+	right: 28px;
 	border-radius: 36px;
-	color: #e91d50 !important;
-	border-color: #e91d50;
+	filter: brightness(200%);
 }
 
-#main .picinfo {
-	font-size: 13px;
-	color: #607D8B;
-	font-style: italic;
-}
-
-#main .tag {
-	font-size: 11px;
-	color: #B0BEC5;
-	font-style: italic;
-}
-
-#footer{
-	padding: 24px;
+.footer {
+	color: var(--foot);
+	font-size: 50%;
 	text-align: center;
-	clear: both;
-	color: #DDD;
-
+	top: 0;
 }
-
-
-
-
-
-
-
-

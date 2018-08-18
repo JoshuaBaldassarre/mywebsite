@@ -1,0 +1,11 @@
+:root {
+	--font: 'Josefin Sans', sans-serif; /*Change font*/
+	--text: #000; /*Change text color*/
+	--bgcolor: #fafafa; /*Change background color*/
+	--primary: #fff; /*Change main color*/
+	--secondary: #0000ff; /*Change highlight color*/
+	--foot: rgba(0, 0, 0, 0.4); /*Change footer text color*/
+	--actionshadow: 0px 6px 6px rgba(0, 0, 0, 0.2); /*Change playpause button properties*/
+	--actionshadow-raised: 0px 12px 12px rgba(0, 0, 0, 0.2); /*Change playpause button properties when raised*/
+	--ppcolor: #fff; /*Change playpause play button color*/
+}
