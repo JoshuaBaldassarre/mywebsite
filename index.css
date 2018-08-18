@@ -14,15 +14,7 @@ button:focus {
 	box-shadow: var(--actionshadow);
 }
 
-.art:hover {
-	box-shadow: var(actionshadow-raised);
-}
-
-.art:active {
-	box-shadow: var(actionshadow-raised);
-}
-
-#yellow {
+#black {
 	color: var(--ppcolor) !important;
 }
 
@@ -55,6 +47,7 @@ button:focus {
 	margin-bottom: 5%;
 }
 
+
 .pagetitle {
 	position: fixed;
 	text-align: center;
@@ -71,7 +64,9 @@ button:focus {
 	bottom: 0;
 	width: 100%;
 	height: 64px;
-	box-shadow: 0px 0px 6px rgba(79, 32, 32, 0.2);
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: var(--secondary);
 }
 
 .actionbutton {
@@ -93,11 +88,10 @@ button:focus {
 	transition: 0.1s;
 }
 
-.actionbutton:hover {
+.actionbutton:focus {
 	-webkit-tap-highlight-color: transparent;
 	user-select: none;
 	outline: none !important;
-	filter: brightness(90%);
 }
 
 .actionbutton:active {
@@ -105,7 +99,7 @@ button:focus {
 	user-select: none;
 	outline: none !important;
 	box-shadow: var(--actionshadow-raised);
-	filter: brightness(100%);
+	filter: brightness(110%);
 }
 
 .footer {
