@@ -4,6 +4,10 @@ body {
 	color: var(--text);
 }
 
+button:focus {
+	outline: none !important;
+}
+
 .art {
 	width: 90%;
 	border-radius: 12px;
@@ -39,7 +43,7 @@ body {
 #playing {
 	padding: 4px;
 	margin-top: 0px;
-	outline: none;
+	outline: none !important;
 	border: none;
 	background: var(--none);
 	color: var(--text) !important;
@@ -72,7 +76,7 @@ body {
 
 .actionbutton {
 	position: fixed;
-	outline: none;
+	outline: none !important;
 	border: none;
 	background: var(--secondary);
 	color: var(--ppcolor) !important;
@@ -88,12 +92,14 @@ body {
 }
 
 .actionbutton:hover {
+	outline: none !important;
 	filter: brightness(90%);
 }
 
 .actionbutton:active {
+	outline: none !important;
 	box-shadow: var(--actionshadow-raised);
-	filter: brightness(200%);
+	filter: brightness(100%);
 }
 
 .footer {
